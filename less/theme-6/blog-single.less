@@ -1,0 +1,193 @@
+.blog-single-page {
+    .hero-holder {
+        background:@text-color-primary url('../images/hero/hero-blog-single.jpg') no-repeat 50% 50%;
+        .background-size(cover);
+    }
+    .actions {
+        margin-top: 60px;
+        
+        a {
+            color: #fff;
+            margin-bottom: 10px;
+            display: block;
+            .opacity(0.8);
+            
+            &:hover {
+                .opacity(1);
+                text-decoration: none;
+            }
+            img {
+               .opacity(0.7);
+               &:hover {
+                  .opacity(1); 
+               } 
+            }
+        }
+    }
+    .heading-section {
+        padding-top: 160px;
+        .back-to-main {
+            color: #fff;
+            position: absolute;
+            left: 15px;
+            top: -75px;
+            font-size: 14px;
+            
+            a {
+                color: rgba(256, 256, 256, 0.8);
+                
+            }
+        }
+        .intro {
+            margin-bottom: 30px;
+        }
+        .meta {
+            color: rgba(256, 256, 256, 0.6);
+            font-size: 14px;
+        }
+        .author-profile {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.post-single-block {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 90px 30px;
+    
+    .post-heading {
+        margin-top: 45px;
+        margin-bottom: 30px;
+        font-size: 24px;
+        font-weight: 500;
+        color: @text-color-primary;
+    }
+    strong {
+        color: @text-color-primary;
+    }
+    .figure {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        img {
+            .border-radius(4px);
+            margin: 0 auto;
+        }
+    }
+    
+    .figure-caption {
+        color: @text-color-light;
+        font-size: 14px;
+        margin-top: 10px;
+        font-style: italic;
+    }
+    .blog-quote {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 300;
+        font-size: 24px;
+        border-left: none;
+        max-width: 90%;
+        margin: 45px auto;
+        padding: 45px;
+        position: relative;
+        color: @color-primary;
+        font-style: italic;
+        border-top: 2px solid lighten(@color-primary, 15%);
+        border-bottom: 2px solid lighten(@color-primary, 15%);
+        
+        .fa-quote-left {
+            position: absolute;
+            left: 15px;
+            top:30px;
+            color: @color-primary;
+            
+        }
+        .source {
+            font-size: 16px;
+        }
+        .quote-tweet {
+            font-size: 14px;
+            text-align:right;
+            
+            .fa {
+                font-size: 28px;
+            }
+        }
+        
+    }
+    
+    .author-container {
+        margin-top: 60px;
+        padding: 30px;
+        position: relative;
+        min-height: 140px;
+        border-top: 1px solid @divider;
+        border-bottom: 1px solid @divider;
+        .author {
+            position: absolute;
+            left: 30px;
+            top: 30px;
+        }
+        .author-profile {
+            width: 80px;
+            height: 80px;
+            
+        }
+        .author-name {
+            font-weight: 500;
+            color: @text-color-primary;
+        }
+        .intro {
+            padding-left: 110px;
+        }
+        .social {
+            a {
+               font-size: 20px;
+               color: @text-color-light; 
+               &:hover {
+                   color: @color-primary;
+               }
+            }
+        }
+    }
+    
+    
+}
+
+.related-posts {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: @smoky-white;
+    .title {
+        margin-top:0;
+        margin-bottom: 45px;
+    }
+    .item {
+        margin-bottom: 30px;
+        .inner {
+            background: #fff;
+            border: 1px solid @divider;
+        }
+        .title {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .content {
+            padding: 30px;
+            font-size: 14px;
+        }
+        img {
+            margin: 0 auto;
+        }
+        &:hover {
+            img {
+                .opacity(0.9);
+            }
+        }
+    }
+}
+
+

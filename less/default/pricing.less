@@ -1,0 +1,168 @@
+.pricing-page {
+    .hero-holder {
+        background:@text-color-primary url('../images/hero/hero-pricing.jpg') no-repeat 50% 50%;
+        .background-size(cover);
+    }
+    .actions {
+        margin-top: 60px;
+        
+        a {
+            color: #fff;
+            margin-bottom: 10px;
+            display: block;
+            .opacity(0.8);
+            
+            &:hover {
+                .opacity(1);
+                text-decoration: none;
+            }
+            img {
+               .opacity(0.7);
+               &:hover {
+                  .opacity(1); 
+               } 
+            }
+        }
+    }
+    .heading-section {
+        padding-top: 180px;
+    }
+    
+}
+
+.pricing-block {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    .block-heading {
+        margin-top:0;
+        margin-bottom: 90px;
+        font-size: 28px;
+        color: @text-color-primary
+    }
+    .item {
+        margin-bottom: 30px;
+        &.item-2 {
+            margin-bottom: 60px;
+        }
+    }
+    .item-inner {
+        color: #fff;
+        .border-radius(4px);
+    }
+    .item-heading {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    .item-intro {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .summary-box {
+        padding: 30px;
+        background: @color-primary;
+        .border-radiuses(4px, 0, 0, 4px);
+        
+    }
+    
+    .item-popular {
+        
+        .item-inner {
+            position: relative;
+        }
+        .summary-box {
+            background: @color-secondary;
+            .border-radius(0);
+        }
+        .popular-tag {
+            color: #fff;
+            background: darken(@color-secondary, 10%);
+            position: absolute;
+            top: -30px;
+            left: 0;
+            width: 100%;
+            .border-radiuses(4px, 0, 0, 4px);
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+    }
+    .currency {
+        font-size: 28px;
+    }
+    .number {
+        font-size: 46px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+    .unit {
+        color: rgba(256, 256, 256, 0.6);
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    
+    .btn-container {
+        margin-bottom: 10px;
+    }
+    
+    .note {
+        font-size: 14px;
+        color: rgba(256, 256, 256, 0.6);
+    }
+
+    .details-box {
+        padding: 30px;
+        background: @text-color-secondary;
+        .border-radiuses(0, 4px, 4px, 0);
+    }
+    
+    .details-list {
+        li {
+            margin-bottom: 15px;
+            font-size: 14px;
+            .fa {
+                color: rgba(256, 256, 256, 0.3);
+            }
+        }
+    }
+
+}
+
+.faqs-block {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background: @color-primary;
+    color: #fff;
+    .block-heading {
+        margin-top:0;
+        margin-bottom: 60px;
+        font-size: 28px;
+    }
+    .panel {
+        .box-shadow(none);
+        background: none;
+        border: none;
+        padding: 0;
+        
+    }
+    .panel-title {
+        //font-family: 'Noto Sans', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        a {
+            color: #fff;
+        }
+        
+        .fa {
+            margin-right: 8px;
+            color:rgba(0, 0, 0, 0.4);
+        }
+    }
+    .panel-body {
+        font-size: 14px;
+    }
+}

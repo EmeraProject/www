@@ -1,0 +1,269 @@
+.blog-page {
+    .hero-holder {
+        background:@text-color-primary url('../images/hero/hero-blog.jpg') no-repeat 50% 50%;
+        .background-size(cover);
+    }
+    .actions {
+        margin-top: 60px;
+        
+        a {
+            color: #fff;
+            margin-bottom: 10px;
+            display: block;
+            .opacity(0.8);
+            
+            &:hover {
+                .opacity(1);
+                text-decoration: none;
+            }
+            img {
+               .opacity(0.7);
+               &:hover {
+                  .opacity(1); 
+               } 
+            }
+        }
+    }
+    .heading-section {
+        padding-top: 180px;
+    }
+
+}
+
+.posts-promo-block {
+    background: @smoky-white;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    .carousel {
+        background: #fff;
+    }
+    .figure-holder {
+         height: 340px;
+    }
+    
+    .item-1 .figure-holder {
+        background:@text-color-primary url('../images/blog/featured-4.jpg') no-repeat 50% 50%;
+        .background-size(cover);
+    }
+    
+    .item-2 .figure-holder {
+        background:@text-color-primary url('../images/blog/featured-2.jpg') no-repeat 50% 50%;
+        .background-size(cover);
+    }
+    
+    .item-3 .figure-holder {
+        background:@text-color-primary url('../images/blog/featured-3.jpg') no-repeat 50% 50%;
+        .background-size(cover);
+    }
+    
+    .item-4 .figure-holder {
+        background:@text-color-primary url('../images/blog/featured-1.jpg') no-repeat 50% 50%;
+        .background-size(cover);
+    }
+    
+    .item-content-inner {
+        padding: 15px;
+    }
+    
+    .item-title {
+        font-size: 24px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        a {
+            color: @text-color-secondary;
+            
+            &:hover {
+                color: @text-color-primary;
+                text-decoration: none;
+            }
+        }
+    }
+    .item-meta {
+        font-size: 14px;
+        color: @text-color-light;
+        margin-bottom: 15px;
+    }
+    .item-intro {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .carousel-indicators {
+        bottom: -45px;
+        li {
+            background-color: #ccc;
+            border: none;
+            width: 11px;
+            height: 11px;
+            margin: 0;
+            margin-right: 5px;
+            &.active {
+                background-color: @color-primary;
+            }
+        }
+    }
+    
+}
+
+.posts-block {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    
+    .block-heading {
+        margin-top:0;
+        margin-bottom: 45px;
+        font-size: 28px;
+        color: @text-color-primary;
+    }
+    
+    .nav-tabs {
+        border: none;
+        margin: 0 auto;
+        display: inline-block;
+        margin-bottom: 60px;
+        
+    }
+    
+    .nav-tabs>li {
+        margin-bottom: 0;
+        margin-right: 15px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    
+    .nav-tabs>li>a {
+        color: @text-color-secondary;
+        .border-radius(4px);
+        padding: 5px 10px;
+        border: none;
+        
+        &:hover {
+            background: @text-color-light;
+            color: #fff;
+        }
+    }
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+        background: @text-color-secondary;
+        color: #fff;
+        border: none;
+        
+    }
+    
+    .post {
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 45px;
+        padding-top: 45px;
+        border-top: 1px solid @divider;
+        .post-title {
+            font-size: 24px;
+            margin-bottom: 30px;
+            text-align: left;
+            padding-left: 200px;
+            a {
+                color: @text-color-secondary;
+                
+                &:hover {
+                    color: @text-color-primary;
+                    text-decoration: none;
+                }
+            }
+        }
+        
+        .post-content {
+            position: relative;
+            padding-left: 200px;
+            text-align: left;
+        }
+        .meta {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            font-size: 14px;
+            color: @text-color-light;
+            padding: 15px;
+            padding-top: 0;
+            text-align: center;
+        }
+        .author-profile {
+            width:60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        .post-thumb {
+            margin-bottom: 30px;
+            img {
+                .border-radius(4px);
+            }
+            
+        }
+        
+    }
+
+}
+
+.pagination {
+    margin-bottom: 60px;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    li {
+        a {
+            .border-radius(4px);
+            border: none;
+            margin-right: 5px;
+            color: @color-primary;
+            &:hover {
+                color: darken(@color-primary, 15%);
+            }
+        }
+    }
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    background-color: @color-primary;
+    border:none; 
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus  {
+    background-color: @smoky-white;
+    border:none;
+}
+
+.pagination>li:first-child>a, .pagination>li:first-child>span, .pagination>li:last-child>a, .pagination>li:last-child>span {
+    .border-radius(4px);
+    background:none;
+}
+
+.blog-signup-block {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: @color-primary;
+    color: #fff;
+    .block-heading {
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 28px;
+    }
+    .block-intro {
+        color: rgba(256, 256, 256, 0.8);
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .subscribe-form {
+        .email-field {
+            width: 300px;
+            border: none;
+        }
+        .btn {
+            height:45px;
+            background: rgba(0, 0, 0, 0.3);
+            border: none;
+            &:hover {
+                background: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}

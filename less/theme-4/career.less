@@ -1,0 +1,105 @@
+.career-page {
+    .hero-holder {
+        background:@text-color-primary url('../images/hero/hero-career.jpg') no-repeat 50% 50%;
+        .background-size(cover);
+    }
+    .actions {
+        margin-top: 60px;
+        
+        a {
+            color: #fff;
+            margin-bottom: 10px;
+            display: block;
+            .opacity(0.8);
+            
+            &:hover {
+                .opacity(1);
+                text-decoration: none;
+            }
+            img {
+               .opacity(0.7);
+               &:hover {
+                  .opacity(1); 
+               } 
+            }
+        }
+    }
+    .heading-section {
+        padding-top: 180px;
+    }
+    
+    .block-heading {
+        margin-top:0;
+        margin-bottom: 15px;
+        font-size: 28px;
+        color: @text-color-primary;
+    }
+    .block-intro {
+        max-width: 720px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    
+}
+
+.culture-block {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    .video-holder {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+.benefits-block {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background: @smoky-white;
+    .benefits-list {
+        margin-top: 30px;
+        margin-bottom: 45px;
+        li {
+            margin-bottom: 15px;
+        }
+        .fa {
+            margin-right: 5px;
+        }
+    }
+}
+
+.jobs-block {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.job-list {
+    max-width: 680px;
+    margin: 0 auto;
+    .item {
+        border-bottom: 1px solid @divider;
+        margin-bottom: 15px;
+        .title {
+            margin-bottom: 10px;
+            margin-top: 0;
+            font-size: 20px;
+        }
+        .meta {
+            color: @text-color-light;
+            font-size: 14px;
+            padding-bottom: 5px;
+            li {
+                &:after {
+                    content: "\f111";
+                    padding-left: 10px;
+                    font: normal normal normal 5px/1 FontAwesome;
+                    position: relative;
+                    bottom: 3px; 
+                }
+                &.last:after {
+                    display: none;
+                }
+                
+            }
+        }
+    }
+}

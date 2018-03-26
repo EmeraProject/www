@@ -1,0 +1,207 @@
+/* ====== Header ======= */
+.header {
+    background: rgba(53, 55, 60, 0.8);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    min-height: 70px;
+    .logo {
+        font-size: 20px;
+        font-weight: 500;
+        float: left;
+        margin-top: 18px;
+        margin-bottom: 0;
+        .text {
+            margin-left: 5px;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+    }
+}
+
+/* ====== Nav ======= */
+.main-nav {
+
+    .navbar-toggle {
+        margin-right: 0;
+        margin-top: 0;
+        background: none;
+        position: absolute;
+        right:10px;
+        top: 13px;
+        
+        &:focus {
+            outline: none;
+        }
+        .icon-bar {
+            background-color: #fff;
+            height: 3px;
+        }
+    }
+
+    
+    .nav {
+        .nav-item {
+            font-weight: normal;
+            text-transform: uppercase;
+            font-size: 12px;
+            display: block;
+            
+            &.active {
+                a {
+                    color: #fff;
+                    background: none;
+                    font-weight: bold;
+                }
+            }
+            a {
+                color: rgba(256, 256, 256, 0.8);
+
+                &:hover {  
+                    color: #fff;    
+                    background: none;         
+                }
+                &:focus {
+                    outline: none;
+                    background: none;
+                }
+                &:active {
+                    outline: none;
+                    background: none;
+                }
+            }    
+            &.active {
+                color: #fff;             
+            }
+            &.last {
+                margin-right: 0;
+            }
+            
+            .btn-signup {
+                background: rgba(0, 0, 0, 0.4);
+                padding: 5px 10px;
+                .border-radius(4px);
+                position: relative;
+                top: 20px;
+                &:active {
+                    background: rgba(0, 0, 0, 0.4);
+                }
+                &:hover {
+                    background: rgba(0, 0, 0, 0.6);
+                    color: #fff;
+                }
+            }
+            
+        }
+
+        &.active {
+            position: relative;
+            & > a {
+                background: darken(@color-primary, 10%);
+                color: #fff;
+                color: rgba(256, 256, 256, 0.8);
+                &:before {
+                    content: "\f0d8";
+                    position: absolute;
+                    bottom: -8px;
+                    left: 0;
+                    text-align: center;
+                    font-family: FontAwesome;    
+                    display: block;
+                    font-size: 12px;
+                    width: 100%;                      
+                }   
+                &.dropdown-toggle:before {
+                    display: none;
+                }
+            }                      
+        }
+        &.open {
+            a {
+                background: none;
+            }
+        }
+        .dropdown-menu {
+            .border-radiuses(0, 4px, 4px, 0);
+            padding: 0; 
+            margin: 0;
+            //margin-top: 2px;
+            border:none;
+            text-transform: none;
+            min-width: 200px;
+            background: rgba(53, 55, 60, 0.8);     
+            animation-fill-mode: both;
+
+            a {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                padding: 8px 20px;
+                color: rgba(256, 256, 256, 0.8); 
+                .opacity(1);   
+                display: block;            
+                
+                &:hover {
+                    background: @text-color-primary;
+                    color: #fff;
+                }
+            }
+        }
+        
+    }
+}
+
+
+.open > .dropdown-menu {
+  .opacity(1);
+  .transform(scale(1, 1));
+}
+  
+.dropdown-menu {
+   display: block;
+  .opacity(0.3);
+  .transform(scale(1, 0));
+  .transition(all 0.2s linear);
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-animation-fill-mode: forwards;  
+  animation-fill-mode: forwards; 
+   
+}
+
+
+/* Override bootstrap default */
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    background: none;
+}
+
+/* Animated Hamburger Icon for Bootstrap */
+.navbar-toggle .icon-bar:nth-of-type(2) {
+	  top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+  	top: 2px;
+}
+
+.navbar-toggle .icon-bar {
+	  position: relative;
+	  transition: all 500ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+	  top: 8px;
+	  transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+	  background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+	  top: -6px;
+	  transform: rotate(-45deg);
+}

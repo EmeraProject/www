@@ -1,0 +1,177 @@
+/* ======= Modal ======= */
+.modal-body {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    iframe {
+        max-width: 100%;
+    }
+    
+}
+
+.modal-content {
+    .border-radius(4px);
+}
+
+.modal-header {
+    border: none;
+    padding-top: 45px;
+    position: relative; 
+}
+
+.modal button.close {
+    font-size: 24px;
+    font-weight:300;
+    text-shadow:none;
+    background: none;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index:10;
+    .opacity(0.6);
+    width: 28px;
+    height: 28px;
+    .border-radius(50%);
+    background: @text-color-light;
+    color: #fff;
+    outline: none;
+    &:hover {
+        .opacity(1);
+    }
+}
+
+.modal-backdrop.in {
+        .opacity(0.8);
+}
+
+.modal {
+    .modal-title {
+        font-size: 24px;
+    } 
+}
+
+.modal-auth {
+
+    .form-group {
+        margin-bottom: 15px;
+        position: relative;
+        .icon {
+            position: absolute;
+            left: 15px;
+            top: 12px;
+            color: @text-color-light;
+            font-size: 20px;
+        }
+        input {
+            padding-left: 40px;
+        }
+    }
+    .legal-note {
+        font-size: 14px;
+        margin-bottom: 30px;
+        color: @text-color-light;
+    }
+    
+    .social-buttons {
+        margin-bottom: 30px;
+        li {
+            margin-bottom: 15px;
+            
+        }
+    }
+    a.btn-social, .btn-social {
+        padding: 12px 16px;
+        text-align: center;
+        position: relative;
+        .fa {
+            position: absolute;
+            left: 16px;
+            top: 12px;
+            min-width: 24px;
+            display: inline-block;
+        }
+    }
+    .divider {
+        border-bottom: 1px solid @divider;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .or-text {
+        position: relative;
+        position: absolute;
+        top: -10px;
+        padding: 0 10px;
+        background: #fff;
+        display: inline-block;
+        left: 50%;
+        margin-left: -21px;  
+        color: @text-color-light;
+        font-size: 14px;
+    }
+    .alter-login {
+        margin-top: 15px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        color: @text-color-light;
+    }
+    .extra {
+        position: relative;
+    }
+    .remember {
+       color: @text-color-light; 
+       font-size: 14px;
+    }
+    .forgotten-password {
+        text-align:right;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 14px;
+        a {
+            color: @text-color-light;
+        }
+    }
+    .option-container {
+        border-top: 1px solid @divider;
+        margin-top: 30px;
+        padding-top: 30px;
+        position: relative;
+        .lead-text {
+            font-size: 16px;
+            text-align: left;
+            color: @text-color-secondary;
+        }
+        .btn {
+            position: absolute;
+            right: 0;
+            top: 23px;
+        }
+    }
+}
+
+.modal-resetpass {
+    .intro {
+        color: @text-color-secondary;
+        font-size: 14px;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+}
+
+.modal-video {
+    .modal-content {
+        background: none;
+        border: none;
+        .box-shadow(none);
+    }
+    .modal-header {
+        padding-top: 30px;
+    }
+}
+
+
+
+
+
